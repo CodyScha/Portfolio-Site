@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { HeadshotComponent } from './headshot/headshot.component';
+import { SvgBkgComponent } from './svg-bkg/svg-bkg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    HeadshotComponent
+    HeadshotComponent,
+    SvgBkgComponent
   ],
   imports: [
     BrowserModule,
