@@ -1,0 +1,11 @@
+#intro {
+    background-image: url("../../..//src/assets/redcliffs.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    height: 740px;
+    /* border: 5px solid purple; */
+}
