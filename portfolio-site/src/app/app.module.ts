@@ -7,6 +7,7 @@ import { TestComponent } from './test/test.component';
 import { HeadshotComponent } from './headshot/headshot.component';
 import { SvgBkgComponent } from './svg-bkg/svg-bkg.component';
 import { IntroPaneComponent } from './intro-pane/intro-pane.component';
+import { NameplateComponent } from './nameplate/nameplate.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IntroPaneComponent } from './intro-pane/intro-pane.component';
     TestComponent,
     HeadshotComponent,
     SvgBkgComponent,
-    IntroPaneComponent
+    IntroPaneComponent,
+    NameplateComponent
   ],
   imports: [
     BrowserModule,
