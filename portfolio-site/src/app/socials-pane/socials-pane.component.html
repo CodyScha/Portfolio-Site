@@ -1,6 +1,8 @@
-<div class="container bg-white rounded-3">
+<div class="container bg-white rounded-3 w-auto" style="display: table;">
     <div class="row">
         <!-- <p class="fs-1">temp: Socials</p> -->
-        <a href="http://google.com"><i class="bi bi-github fs-1"></i></a>
+        <div class="col" *ngFor="let soc of socials">
+            <a href={{soc.link}}><i class={{soc.icon}} class ="fs-1" target="_blank" title={{soc.name}}></i></a>
+        </div>
     </div>
 </div>
