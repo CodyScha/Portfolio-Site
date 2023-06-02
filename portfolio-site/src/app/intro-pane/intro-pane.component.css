@@ -6,6 +6,20 @@
     padding: 0px;
     margin: 0px;
     width: auto;
-    height: 440px;
+    /* height: 440px; */
+    min-height: 440px;
     /* border: 5px solid purple; */
+}
+
+#intro-para {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-shadow: 1px 1px 20px #00000044;
+}
+
+@media (min-width: 1500px) {
+    #intro-para {
+        margin-left: 500px;
+        margin-right: 500px;
+    }
 }
