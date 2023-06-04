@@ -10,6 +10,8 @@ import { IntroPaneComponent } from './intro-pane/intro-pane.component';
 import { NameplateComponent } from './nameplate/nameplate.component';
 import { SocialsPaneComponent } from './socials-pane/socials-pane.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { TimelineModule } from 'primeng/timeline';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TimelineComponent } from './timeline/timeline.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TimelineModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
