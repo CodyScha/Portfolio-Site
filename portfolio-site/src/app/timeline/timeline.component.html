@@ -1,13 +1,13 @@
 <div class="m-auto">
-    <div id="timeline-container" class="mt-5 mx-auto" style="width: 85vw">
+    <div id="timeline-container" class="mt-3 mb-5 mx-auto" style="width: 80vw">
         <p-timeline [value]="exps" align="alternate" styleClass="customized-timeline" class="m-auto">
-            <ng-template pTemplate="marker" let-event>
+            <ng-template pTemplate="marker" let-exp>
                 <span class="custom-marker shadow-2 rounded-circle p-1 px-2" [style.backgroundColor]="nodeColor">
                     <i [ngClass]="icon"></i>
                 </span>
             </ng-template>
             <ng-template pTemplate="content" let-exp>
-                <p-card [header]="exp.title" [subheader]="exp.org" class="card shadow p-1">
+                <p-card [header]="exp.title" [subheader]="exp.org" class="card shadow p-2">
                     <p class="text-wrap">
                         {{exp.description}}
                     </p>
