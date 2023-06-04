@@ -1,16 +1,19 @@
-<div id="timeline-container" class="mt-5">
-    <p-timeline [value]="exps" align="alternate" styleClass="customized-timeline">
-        <ng-template pTemplate="marker" let-event>
-            <span class="custom-marker shadow-2 rounded-circle p-1 px-2" [style.backgroundColor]="nodeColor">
-                <i [ngClass]="icon"></i>
-            </span>
-        </ng-template>
-        <ng-template pTemplate="content" let-exp>
-            <p-card [header]="exp.title" [subheader]="exp.org" class="card shadow p-1">
-                <p>
-                    {{exp.description}}
-                </p>
-            </p-card>
-        </ng-template>
-    </p-timeline>
+<div class="m-auto">
+    <div id="timeline-container" class="mt-5 mx-auto" style="width: 85vw">
+        <p-timeline [value]="exps" align="alternate" styleClass="customized-timeline" class="m-auto">
+            <ng-template pTemplate="marker" let-event>
+                <span class="custom-marker shadow-2 rounded-circle p-1 px-2" [style.backgroundColor]="nodeColor">
+                    <i [ngClass]="icon"></i>
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-exp>
+                <p-card [header]="exp.title" [subheader]="exp.org" class="card shadow p-1">
+                    <p class="text-wrap">
+                        {{exp.description}}
+                    </p>
+                    <button class="btn"></button>
+                </p-card>
+            </ng-template>
+        </p-timeline>
+    </div>
 </div>
