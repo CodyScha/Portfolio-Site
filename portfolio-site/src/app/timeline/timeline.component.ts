@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TimelineComponent {
     exps: any[];
-    nodeColor: string = "#FF0000";
+    nodeColor: string = "#953929";
     icon:string = "bi bi-circle-fill text-white";
 
     constructor() {
