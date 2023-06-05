@@ -3,7 +3,7 @@
         <p-timeline [value]="exps" align="alternate" styleClass="customized-timeline" class="m-auto">
             <ng-template pTemplate="marker" let-exp>
                 <span class="custom-marker shadow-2 rounded-circle p-1 px-2" [style.backgroundColor]="nodeColor">
-                    <i [ngClass]="icon"></i>
+                    <i class="bi bi-circle-fill text-white"></i>
                 </span>
             </ng-template>
             <ng-template pTemplate="content" let-exp>
