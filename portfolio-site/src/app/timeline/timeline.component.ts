@@ -36,7 +36,7 @@ export class TimelineComponent {
 
         this.exps = [
             {
-                title: "Front End Developer Intern", org: "Mindhome", startDate: "October 2021", endDate: "May 2022", description: "emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp 1"
+                title: "Front End Developer Intern", org: "MindHome", startDate: "October 2021", endDate: "May 2022", description: "emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp 1"
             },
             {
                 title: "Web Development Branch Head", org: "SPARC at SIUE", startDate: "April 2021", endDate: "May 2022", description: "emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp 2"
