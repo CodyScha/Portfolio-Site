@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TimelineComponent {
     exps: any[];
     nodeColor: string = "#953929";
-    icon:string = "bi bi-circle-fill text-white";
+    icon: string = "bi bi-circle-fill text-white";
 
     constructor() {
         this.exps = [
