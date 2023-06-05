@@ -1,16 +1,39 @@
-import { Component } from '@angular/core';
+import { style } from '@angular/animations';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-timeline',
     templateUrl: './timeline.component.html',
-    styleUrls: ['./timeline.component.css']
+    styleUrls: ['./timeline.component.css'],
+    styles: [
+        '.p-timeline-event-opposite {display:none;}'
+    ]
 })
 export class TimelineComponent {
     exps: any[];
     nodeColor: string = "#953929";
     icon: string = "bi bi-circle-fill text-white";
+    tl_align: string = "alternate";
+    
+    @HostListener('window:resize', ['$event'])
+    onWindowResize(event: any) {
+        if (window.matchMedia('(max-width: 700px)').matches) {
+            this.tl_align = "";
+        }
+        else {
+            this.tl_align = "alternate"
+        }
+    }
 
     constructor() {
+        // * Need to do initial window size check
+        if (window.matchMedia('(max-width: 700px)').matches) {
+            this.tl_align = "";
+        }
+        else {
+            this.tl_align = "alternate"
+        }
+
         this.exps = [
             {
                 title: "Front End Developer Intern", org: "Mindhome", startDate: "October 2021", endDate: "May 2022", description: "emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp emp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp 1"
