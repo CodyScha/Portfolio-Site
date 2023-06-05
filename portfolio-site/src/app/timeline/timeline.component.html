@@ -7,12 +7,18 @@
                 </span>
             </ng-template>
             <ng-template pTemplate="content" let-exp>
-                <p-card [header]="exp.title" [subheader]="exp.org" class="card shadow p-2">
-                    <p class="text-wrap">
-                        {{exp.description}}
-                    </p>
-                    <button class="btn"></button>
-                </p-card>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{exp.title}}
+                        </h5>
+                        <h6 class="card-subtitle mb-2">{{exp.org}}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">{{exp.startDate}} - {{exp.endDate}}</h6>
+                        <p class="card-text">
+                            {{exp.description}}
+                        </p>
+                    </div>
+                </div>
             </ng-template>
         </p-timeline>
     </div>
