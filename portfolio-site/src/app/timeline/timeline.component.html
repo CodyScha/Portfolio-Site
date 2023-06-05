@@ -1,0 +1,25 @@
+<div class="m-auto">
+    <div id="timeline-container" class="mt-3 mb-5 mx-auto" style="width: 80vw">
+        <p-timeline [value]="exps" [align]="tl_align" styleClass="customized-timeline" class="m-auto tl-holder">
+            <ng-template pTemplate="marker" let-exp>
+                <span class="custom-marker shadow-2 rounded-circle p-1 px-2" [style.backgroundColor]="nodeColor">
+                    <i class="bi bi-circle-fill text-white"></i>
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-exp>
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{exp.title}}
+                        </h5>
+                        <h6 class="card-subtitle mb-2">{{exp.org}}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">{{exp.startDate}} - {{exp.endDate}}</h6>
+                        <p class="card-text">
+                            {{exp.description}}
+                        </p>
+                    </div>
+                </div>
+            </ng-template>
+        </p-timeline>
+    </div>
+</div>
