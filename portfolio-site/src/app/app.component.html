@@ -1,12 +1,24 @@
 <div id="page">
-    <div id="left"></div>
-    <div id="right"></div>
-    <div id="top"></div>
-    <div id="bottom"></div>
+  <app-intro-pane></app-intro-pane>
 
-    <!-- <app-test></app-test>  -->
-    <!-- <app-headshot></app-headshot> -->
-    <!-- <app-svg-bkg class="test"></app-svg-bkg> -->
-    <app-intro-pane></app-intro-pane>
-    <router-outlet></router-outlet>
+  <div class="mx-auto mt-4 fs-1" style="width:max-content;">
+    <p style="font-weight: 700;">
+      Career Timeline
+    </p>
+  </div>
+
+  <app-timeline></app-timeline>
+
+  <div class="mx-auto mt-4 fs-1" style="width:max-content;">
+    <p style="font-weight: 700;">
+      Personal Projects
+    </p>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
 </div>

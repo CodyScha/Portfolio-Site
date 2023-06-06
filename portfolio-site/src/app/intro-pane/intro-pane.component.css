@@ -17,9 +17,17 @@
     text-shadow: 1px 1px 20px #00000044;
 }
 
+#pic-and-name {
+    margin-top: 50px;
+}
+
 @media (min-width: 1500px) {
     #intro-para {
         margin-left: 500px;
         margin-right: 500px;
+    }
+
+    #pic-and-name {
+        margin-top: 150px;
     }
 }
