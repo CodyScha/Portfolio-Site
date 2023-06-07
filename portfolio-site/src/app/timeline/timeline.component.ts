@@ -14,7 +14,7 @@ export class TimelineComponent {
     nodeColor: string = "#953929";
     icon: string = "bi bi-circle-fill text-white";
     tl_align: string = "alternate";
-    
+
     @HostListener('window:resize', ['$event'])
     onWindowResize(event: any) {
         if (window.matchMedia('(max-width: 700px)').matches) {
