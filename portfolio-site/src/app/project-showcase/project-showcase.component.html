@@ -1,1 +1,24 @@
-<p>project-showcase works!</p>
+<div class="container-fluid" style="width: 80vw">
+    <div class="row align-items-center justify-contents-center">
+        <div class="col-12 col-md-6 col-lg-3 mt-5 h-100" *ngFor="let proj of projects">
+            <div class="card shadow-sm h-100">
+                <img src="{{proj.image}}" alt={{proj.name}} class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{proj.name}}</h5>
+                    <p class="card-text">{{proj.description}}</p>
+                    <small class="text-muted">{{proj.date}}</small>
+                </div>
+                <div class="card-footer">
+                    <a href={{proj.mainLink}}><i class={{proj.mainLinkIcon}} class="fs-1" target="_blank" title="Test"></i></a>
+                    <a *ngIf="'secondLink' in proj" href={{proj.secondLink}}><i class={{proj.secondLinkIcon}} class="fs-1" target="_blank" title="Test"></i></a>
+                </div>
+            </div>
+            <!-- <img src={{proj.image}} alt="Project Image" srcset="">
+            <p class="fs-1 text-center">{{proj.name}}</p>
+            <p class="fs-3 text-center">{{proj.mainLink}}</p>
+            <div *ngIf="'secondLink' in proj">
+                <p class="fs-3 text-center">{{proj.secondLink}}</p>
+            </div> -->
+        </div>
+    </div>
+</div>
