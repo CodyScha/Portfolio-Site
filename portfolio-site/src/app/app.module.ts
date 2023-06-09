@@ -12,6 +12,7 @@ import { SocialsPaneComponent } from './socials-pane/socials-pane.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
+import { ProjectShowcaseComponent } from './project-showcase/project-showcase.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CardModule } from 'primeng/card';
     IntroPaneComponent,
     NameplateComponent,
     SocialsPaneComponent,
-    TimelineComponent
+    TimelineComponent,
+    ProjectShowcaseComponent
   ],
   imports: [
     BrowserModule,
