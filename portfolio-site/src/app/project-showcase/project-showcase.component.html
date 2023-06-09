@@ -1,6 +1,6 @@
 <div class="container-fluid mb-5" style="width: 80vw;">
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 mt-5" *ngFor="let proj of projects">
+        <div class="col-12 col-md-6 col-lg-4 mt-5" *ngFor="let proj of projects">
             <div class="card shadow-sm h-100">
                 <img *ngIf="proj.image" src="{{proj.image}}" alt="{{proj.name}} image" class="card-img-top">
                 <div class="card-body">
@@ -9,7 +9,7 @@
                     <small class="text-muted">{{proj.date}}</small>
                 </div>
                 <div class="card-footer">
-                    <a href={{proj.mainLink}}><i class="{{proj.mainLinkIcon}} mx-1" class="fs-1" target="_blank" title="Test"></i></a>
+                    <a href={{proj.mainLink}}><i class="{{proj.mainLinkIcon}} mx-1" class="fs-1" target="_blank" title={{proj.mainLinkTitle}}></i></a>
                     <a *ngIf="proj.secondLink" href={{proj.secondLink}}><i class="{{proj.secondLinkIcon}} mx-1" class="fs-1" target="_blank" title="Test"></i></a>
                 </div>
             </div>

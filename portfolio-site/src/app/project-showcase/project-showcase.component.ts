@@ -12,7 +12,7 @@ export class ProjectShowcaseComponent {
 	constructor() {
 		this.projects = [
 			{
-				name: "Portfolio Website", date: "May 2023", image: "../../..//src/assets/cute-pig-polite-pig.gif", description: "This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.", mainLink: "https://github.com/CodyScha/codyscha.github.io", mainLinkIcon: "bi bi-github"
+				name: "Portfolio Website", date: "May 2023", image: "../../..//src/assets/cute-pig-polite-pig.gif", description: "This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.This is a project desc.", mainLink: "https://github.com/CodyScha/codyscha.github.io", mainLinkIcon: "bi bi-github", mainLinkTitle: "GitHub Repo"
 			},
 			{
 				name: "Portfolio Website", date: "May 2023", image: "../../..//src/assets/rinzler.webp", description: "This is a project desc.", mainLink: "https://github.com/CodyScha/codyscha.github.io", mainLinkIcon: "bi bi-github"
